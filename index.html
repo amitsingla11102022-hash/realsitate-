@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skyline Homes - Premium homes, apartments, plots and commercial properties." />
+  <title>Skyline Homes | Find Your Perfect Property</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Skyline Homes home">
+        <span class="brand-mark"><span></span><i></i></span>
+        <span>
+          <strong>Skyline <b>Homes</b></strong>
+          <small>BUILDING BETTER TOMORROWS</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav">
+        <a class="active" href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-contact">
+        <span>☎ +91 98765 43210</span>
+        <a href="#contact" class="btn btn-gold">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow light">YOUR TRUSTED REAL ESTATE PARTNER</p>
+          <h1>Find Your<br><span>Perfect Property</span></h1>
+          <p class="hero-text">Discover premium homes, apartments, plots and commercial spaces in the best locations.</p>
+          <div class="hero-actions">
+            <a href="#properties" class="btn btn-gold">View Properties <span>→</span></a>
+            <a href="#contact" class="btn btn-outline">Book a Consultation</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-note">Better Homes<br><em>Brighter Futures</em></div>
+    </section>
+
+    <section class="search-card-wrap">
+      <div class="container">
+        <form id="propertySearch" class="search-card">
+          <h2>Search Your Ideal Property</h2>
+          <div class="search-grid">
+            <label>Property Type
+              <select id="type">
+                <option value="">Any Type</option>
+                <option>Apartment</option><option>Villa</option><option>Plot</option><option>Commercial</option>
+              </select>
+            </label>
+            <label>Location
+              <select id="location">
+                <option value="">Any Location</option>
+                <option>Sector 62, Noida</option><option>Golf Course Road, Gurgaon</option><option>Greater Noida</option>
+              </select>
+            </label>
+            <label>Budget
+              <select id="budget">
+                <option value="">Any Budget</option>
+                <option>Under ₹50 Lakh</option><option>₹50 Lakh - ₹1.5 Cr</option><option>₹1.5 Cr - ₹3 Cr</option>
+              </select>
+            </label>
+            <label>Bedrooms
+              <select id="beds">
+                <option value="">Any</option><option>2+</option><option>3+</option><option>4+</option>
+              </select>
+            </label>
+            <button class="search-btn" type="submit">⌕ <span>Search Property</span></button>
+          </div>
+          <p id="searchResult" class="search-result" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="properties" class="section properties-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FEATURED PROPERTIES</p>
+            <h2>Our Best Picks for You</h2>
+          </div>
+          <a href="#properties">View All Properties →</a>
+        </div>
+        <div class="property-grid">
+          <article class="property-card" data-type="Apartment" data-location="Sector 62, Noida" data-beds="3">
+            <div class="property-image image-one"><span>For Sale</span></div>
+            <div class="property-body">
+              <strong class="price">₹ 1.25 Cr</strong>
+              <h3>3 BHK Luxury Apartment</h3>
+              <p>⌖ Sector 62, Noida</p>
+              <div class="specs"><span>▣ 3 Beds</span><span>♨ 3 Baths</span><span>□ 1,850 Sq Ft</span></div>
+              <button class="details-btn" data-property="3 BHK Luxury Apartment">View Details →</button>
+            </div>
+          </article>
+          <article class="property-card" data-type="Villa" data-location="Golf Course Road, Gurgaon" data-beds="4">
+            <div class="property-image image-two"><span>For Sale</span></div>
+            <div class="property-body">
+              <strong class="price">₹ 2.80 Cr</strong>
+              <h3>Modern Family Villa</h3>
+              <p>⌖ Golf Course Road, Gurgaon</p>
+              <div class="specs"><span>▣ 4 Beds</span><span>♨ 4 Baths</span><span>□ 3,200 Sq Ft</span></div>
+              <button class="details-btn" data-property="Modern Family Villa">View Details →</button>
+            </div>
+          </article>
+          <article class="property-card" data-type="Plot" data-location="Greater Noida" data-beds="0">
+            <div class="property-image image-three"><span>For Sale</span></div>
+            <div class="property-body">
+              <strong class="price">₹ 45 Lakh</strong>
+              <h3>Residential Plot</h3>
+              <p>⌖ Greater Noida</p>
+              <div class="specs"><span>□ Plot Size: 150 Sq Yards</span><span>◷ Facing: East</span></div>
+              <button class="details-btn" data-property="Residential Plot">View Details →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section trust-section">
+      <div class="container trust-wrap">
+        <div class="trust-intro">
+          <p class="eyebrow">WHY CHOOSE US</p>
+          <h2>Your Trusted Real Estate Experts</h2>
+          <p>We are committed to helping you find the right property that fits your lifestyle, budget and future goals. With years of experience and a customer-first approach, we make your property journey simple, safe and rewarding.</p>
+          <a href="#about" class="btn btn-gold">Learn More →</a>
+        </div>
+        <div class="trust-grid">
+          <div><span>◈</span><h3>Trusted<br>Real Estate Experts</h3><p>Years of experience and proven track record.</p></div>
+          <div><span>⌖</span><h3>Prime<br>Locations</h3><p>Best properties in high-growth areas.</p></div>
+          <div><span>₹</span><h3>Transparent<br>Pricing</h3><p>No hidden charges, 100% clarity.</p></div>
+          <div><span>♙</span><h3>Personalized<br>Assistance</h3><p>Support at every step of your journey.</p></div>
+          <div><span>⚿</span><h3>End-to-End<br>Property Support</h3><p>From search to possession and beyond.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-photo"></div>
+        <div>
+          <p class="eyebrow">ABOUT US</p>
+          <h2>Building Dreams, One Property at a Time</h2>
+          <p>At Skyline Homes, we help buyers, investors and families find properties that match their lifestyle, budget and future goals. Whether you're buying your first home, upgrading or investing, we're here to guide you with expert advice and dedicated support.</p>
+          <div class="stats">
+            <div><strong>500+</strong><span>Happy Families</span></div>
+            <div><strong>10+</strong><span>Years of Experience</span></div>
+            <div><strong>100%</strong><span>Client Satisfaction</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="lead-section">
+      <div class="container lead-grid">
+        <div>
+          <p class="eyebrow light">GET IN TOUCH</p>
+          <h2>Looking for Your Dream Property?</h2>
+          <p>Leave your details and our property consultant will contact you with the best options tailored to your needs.</p>
+        </div>
+        <form id="leadForm" class="lead-form">
+          <div class="form-row">
+            <label>Full Name *<input required name="name" placeholder="Your Name"></label>
+            <label>Phone Number *<input required name="phone" placeholder="Your Phone Number"></label>
+          </div>
+          <div class="form-row">
+            <label>Email Address *<input required type="email" name="email" placeholder="Your Email"></label>
+            <label>Preferred Location<select name="preferredLocation"><option>Select Location</option><option>Noida</option><option>Gurgaon</option><option>Greater Noida</option></select></label>
+          </div>
+          <div class="form-row">
+            <label>Property Type<select name="propertyType"><option>Select Property Type</option><option>Apartment</option><option>Villa</option><option>Plot</option><option>Commercial</option></select></label>
+            <label>Budget Range<select name="budgetRange"><option>Select Budget</option><option>Under ₹50 Lakh</option><option>₹50 Lakh - ₹1.5 Cr</option><option>₹1.5 Cr+</option></select></label>
+          </div>
+          <button class="btn btn-gold full" type="submit">Get Property Recommendations</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home">
+          <span class="brand-mark"><span></span><i></i></span>
+          <span><strong>Skyline <b>Homes</b></strong><small>BUILDING BETTER TOMORROWS</small></span>
+        </a>
+      </div>
+      <div><p>☎ +91 98765 43210</p><p>✉ info@skylinehomes.in</p><p>⌖ 123 Business Park, Sector 62, Noida, UP - 201301</p></div>
+      <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#properties">Properties</a><a href="#about">About Us</a><a href="#contact">Contact</a></div>
+      <div><h4>Follow Us</h4><div class="socials"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Skyline Homes. All Rights Reserved.</span><span>Privacy Policy &nbsp;|&nbsp; Terms & Conditions</span></div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close">×</button>
+      <p class="eyebrow">PROPERTY ENQUIRY</p>
+      <h2 id="modalTitle">Property Details</h2>
+      <p>Thanks for your interest. Our property consultant will contact you with availability, pricing and viewing details.</p>
+      <a href="#contact" class="btn btn-gold modal-contact">Request a Callback</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
